@@ -1,6 +1,11 @@
 ﻿@model OdeToFood.Models.Restaurant
 
 <h1>@Model.Name</h1>
-<div>..Details</div>
+<div>
+    <ul>
+        <li>Cuisine: @Model.Cuisine</li>
+        <li>Id: @Model.Id</li>
+    </ul>
+</div>
 
 <a asp-action="Index" asp-controller="Home">Home</a>
