@@ -1,0 +1,10 @@
+﻿@using OdeToFood.Models
+@model OdeToFood.Models.Restaurant
+
+<h1>Creating a restaurant</h1>
+<form  method="post">
+    <input asp-for="@Model.Name" />
+    <select asp-for="@Model.Cuisie" asp-items="@Html.GetEnumSelectList<CuisineType>()"></select>
+
+    <input type="submit" value="Save" />
+</form>
