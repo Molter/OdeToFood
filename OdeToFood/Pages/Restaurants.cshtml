@@ -1,0 +1,10 @@
+﻿@page
+@model OdeToFood.Pages.RestaurantsModel
+
+<h1>Restaurants</h1>
+<ul>
+    @foreach (var r in Model._restaurants)
+    {
+        <li>@r.Name (@r.Cuisine) - <a asp-controller="Home" asp-action="details" asp-route-id="@r.Id">details</a></li>
+    }
+</ul>
